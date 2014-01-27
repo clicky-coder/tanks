@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Tanks\tank.png</Source>
+      <Name>Tanks\tank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Tanks\tank.xnb</Output>
+      <Time>2014-01-25T17:53:27.2050943-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Shells\shell.png</Source>
+      <Name>Shells\shell</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\shell.xnb</Output>
+      <Time>2014-01-25T18:02:23.9487943-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Untitled.png</Source>
+      <Name>ground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\ground.xnb</Output>
+      <Time>2014-01-25T17:18:40.2027246-07:00</Time>
+    </Item>
+    <Item>
+      <Source>background.png</Source>
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2014-01-25T21:08:33.9619661-07:00</Time>
+    </Item>
+    <Item>
+      <Source>background_2.png</Source>
+      <Name>background_2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\background_2.xnb</Output>
+      <Time>2014-01-25T17:24:25.736488-07:00</Time>
+    </Item>
+    <Item>
+      <Source>cursor.png</Source>
+      <Name>cursor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Time>2014-01-25T18:23:03.8662409-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0001.png</Source>
+      <Name>explode\fireball_hit_0001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0001.xnb</Output>
+      <Time>2014-01-25T18:41:03.668002-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0002.png</Source>
+      <Name>explode\fireball_hit_0002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0002.xnb</Output>
+      <Time>2014-01-25T18:41:03.6730023-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0003.png</Source>
+      <Name>explode\fireball_hit_0003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0003.xnb</Output>
+      <Time>2014-01-25T18:41:03.6780026-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0004.png</Source>
+      <Name>explode\fireball_hit_0004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0004.xnb</Output>
+      <Time>2014-01-25T18:41:03.6820028-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0005.png</Source>
+      <Name>explode\fireball_hit_0005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0005.xnb</Output>
+      <Time>2014-01-25T18:41:03.6870031-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0006.png</Source>
+      <Name>explode\fireball_hit_0006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0006.xnb</Output>
+      <Time>2014-01-25T18:41:03.6910033-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0007.png</Source>
+      <Name>explode\fireball_hit_0007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0007.xnb</Output>
+      <Time>2014-01-25T18:41:03.6950036-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0008.png</Source>
+      <Name>explode\fireball_hit_0008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0008.xnb</Output>
+      <Time>2014-01-25T18:41:03.7010039-07:00</Time>
+    </Item>
+    <Item>
+      <Source>explode\fireball_hit_0009.png</Source>
+      <Name>explode\fireball_hit_0009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\explode\fireball_hit_0009.xnb</Output>
+      <Time>2014-01-25T18:41:03.7100044-07:00</Time>
+    </Item>
+    <Item>
+      <Source>GameText.spritefont</Source>
+      <Name>GameText</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\GameText.xnb</Output>
+      <Time>2014-01-25T21:11:13.6270984-07:00</Time>
+    </Item>
+    <Item>
+      <Source>sun.png</Source>
+      <Name>sun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\sun.xnb</Output>
+      <Time>2014-01-25T21:18:04.2275834-07:00</Time>
+    </Item>
+    <Item>
+      <Source>InventoryBackground.png</Source>
+      <Name>InventoryBackground</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\InventoryBackground.xnb</Output>
+      <Time>2014-01-26T09:51:30.3467876-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Inventory_Item_Background.png</Source>
+      <Name>Inventory_Item_Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Inventory_Item_Background.xnb</Output>
+      <Time>2014-01-26T09:55:53.0348125-07:00</Time>
+    </Item>
+    <Item>
+      <Source>selector.png</Source>
+      <Name>selector</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\selector.xnb</Output>
+      <Time>2014-01-26T10:04:53.3117145-07:00</Time>
+    </Item>
+    <Item>
+      <Source>controls.png</Source>
+      <Name>controls</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\controls.xnb</Output>
+      <Time>2014-01-26T19:15:01.6416071-07:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\TanksContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\TanksContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-06-19T07:32:39.098913-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
