@@ -16,6 +16,8 @@ namespace Tanks
     {
         #region shell count
         int normalShells = 100;
+        int heavyShells = 5;
+        int lightShells = 5;
         #endregion
         Rectangle rectangle;
         Texture2D texture;
@@ -31,13 +33,18 @@ namespace Tanks
             rectangle = r;
             texture = t;
             spriteBatch = sb;
-            power = 500;
+            power = 50;
             shells = new List<Shell>();
         }
         public void Update()
         {
             Move();
             Shoot();
+            #region Update shell count
+            g.normalShells = normalShells;
+            g.lightShells = lightShells;
+            g.heavyShells = heavyShells;
+            #endregion
         }
         public void Draw()
         {
@@ -64,10 +71,50 @@ namespace Tanks
             MouseState mouse = Mouse.GetState();
             if (mouse.LeftButton == ButtonState.Pressed && oldMouse.LeftButton == ButtonState.Released && mouse.X > rectangle.X + rectangle.Width)//limit to just shooting forward
             {
-                //Insert something here to check what bullet is in the inventory
-                Shell_Normal shell = new Shell_Normal(new Rectangle(rectangle.X + rectangle.Width, rectangle.Y + 40, 10, 10), shellTextures["Shell_Normal"], spriteBatch, power - 2, mouse.X, mouse.Y, power - 2);
-                shell.explodeTextures = g.explodeTextures;
-                shells.Add(shell);
+                //Insert something here to check what bullet is in stock
+                switch (g.SelectedShell)
+                {
+                    case "Shell_Normal":
+                        if (normalShells > 0)
+                        {
+                            Shell_Normal shell = new Shell_Normal(new Rectangle(rectangle.X + rectangle.Width, rectangle.Y + 40, 25, 25), shellTextures["Shell_Normal"], spriteBatch, power - 5, mouse.X, mouse.Y, power - 5);
+                            shell.explodeTextures = g.explodeTextures;
+                            shells.Add(shell);
+                            normalShells--;
+                        }
+                        else
+                        {
+                            //handle
+                        }
+                        break;
+                    case "Shell_Light":
+                        if (lightShells > 0)
+                        {
+                            Shell_Light shellLight = new Shell_Light(new Rectangle(rectangle.X + rectangle.Width, rectangle.Y + 40, 25, 25), shellTextures["Shell_Light"], spriteBatch, power - 1, mouse.X, mouse.Y, power - 1);
+                            shellLight.explodeTextures = g.explodeTextures;
+                            shells.Add(shellLight);
+                            lightShells--;
+                        }
+                        else
+                        {
+                            //handle
+                        }
+                        break;
+                    case "Shell_Heavy":
+                        if (heavyShells > 0)
+                        {
+                            Shell_Heavy shellHeavy = new Shell_Heavy(new Rectangle(rectangle.X + rectangle.Width, rectangle.Y + 40, 25, 25), shellTextures["Shell_Heavy"], spriteBatch, power - 10, mouse.X, mouse.Y, power - 10);
+                            shellHeavy.explodeTextures = g.explodeTextures;
+                            shells.Add(shellHeavy);
+                            heavyShells--;
+                        }
+                        else
+                        {
+                            //handle
+                        }
+                        break;
+                }
+            
             }
             oldMouse = mouse;
             foreach (Shell s in shells)

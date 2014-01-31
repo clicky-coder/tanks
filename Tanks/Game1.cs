@@ -91,14 +91,17 @@ namespace Tanks
             cursorRec = new Rectangle(0, 0, 50, 50);
             cursorTex = LoadTex("cursor");
             tank = new Tank(LoadTex("Tanks/tank"), new Rectangle(100, 550, 100, 100), spriteBatch);
-            tankShelltTextures.Add("Shell_Normal", LoadTex("Shells/shell"));
+            tankShelltTextures.Add("Shell_Normal", LoadTex("Shells/Shell_Normal"));
+            tankShelltTextures.Add("Shell_Light", LoadTex("Shells/Shell_Light"));
+            tankShelltTextures.Add("Shell_Heavy", LoadTex("Shells/Shell_Heavy"));
             tank.shellTextures = tankShelltTextures;
             #region inventory
             Texture2D incBg = LoadTex("InventoryBackground");
             inventory = new Inventory(new Rectangle(0, 0, (int)(0.3 * incBg.Width), (int)(0.3 * incBg.Height)), incBg, spriteBatch);
             inventory.Textures.Add("selector", LoadTex("selector"));
-            inventory.items.Add(new Item(new Rectangle(0,0,100,100), LoadTex("Inventory_Item_Background"), tankShelltTextures["Shell_Normal"], spriteBatch, "Normal, everyday artillary shell"));
-            //inventory.items.Add(new Item(new Rectangle(0, 0, 100, 100), LoadTex("Inventory_Item_Background"), tankShelltTextures["Shell_Normal"], spriteBatch, "Normal, everyday artillary shell"));
+            inventory.items.Add(new Item(new Rectangle(0,0,100,100), LoadTex("Inventory_Item_Background"), tankShelltTextures["Shell_Normal"], spriteBatch, "Normal, everyday artillary shell", "Shell_Normal"));
+            inventory.items.Add(new Item(new Rectangle(0, 0, 100, 100), LoadTex("Inventory_Item_Background"), tankShelltTextures["Shell_Light"], spriteBatch, "Sacrifice damage for Range", "Shell_Light"));
+            inventory.items.Add(new Item(new Rectangle(0, 0, 100, 100), LoadTex("Inventory_Item_Background"), tankShelltTextures["Shell_Heavy"], spriteBatch, "Sacrifice Range for Serious Damage", "Shell_Heavy"));
             #endregion 
         }
 
@@ -133,7 +136,7 @@ namespace Tanks
             inventory.Update();
            
             KeyboardState keys = Keyboard.GetState();
-            if (keys.IsKeyDown(Keys.H) && oldKeys.IsKeyDown(Keys.H)) drawHelp = !drawHelp;
+            if (keys.IsKeyDown(Keys.H) && oldKeys.IsKeyUp(Keys.H)) drawHelp = !drawHelp;
             oldKeys = keys;
             base.Update(gameTime);
         }
@@ -156,7 +159,7 @@ namespace Tanks
             spriteBatch.Draw(groundTex, gRec, Color.White);
             spriteBatch.Draw(cursorTex, cursorRec, Color.White);
             spriteBatch.Draw(sunTex, sunRec, Color.White);
-            spriteBatch.DrawString(g.gameText, "Press \"H\" for help (very glitchy)", new Vector2(200, 500), Color.White);
+            spriteBatch.DrawString(g.gameText, "Press \"H\" for help", new Vector2(200, 500), Color.White);
             spriteBatch.End();
             if (MoveCloudsCounter % 3 == 0)
             {

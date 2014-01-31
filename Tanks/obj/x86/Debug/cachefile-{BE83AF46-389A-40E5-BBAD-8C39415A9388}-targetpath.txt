@@ -1,5 +1,4 @@
 Content\Tanks\tank.xnb
-Content\Shells\shell.xnb
 Content\ground.xnb
 Content\background.xnb
 Content\background_2.xnb
@@ -19,3 +18,6 @@ Content\InventoryBackground.xnb
 Content\Inventory_Item_Background.xnb
 Content\selector.xnb
 Content\controls.xnb
+Content\Shells\Shell_Light.xnb
+Content\Shells\Shell_Normal.xnb
+Content\Shells\Shell_Heavy.xnb

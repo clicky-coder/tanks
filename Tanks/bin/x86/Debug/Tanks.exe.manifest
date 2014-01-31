@@ -93,14 +93,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tanks.exe" size="17920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tanks.exe" size="20992">
       <assemblyIdentity name="Tanks" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>mNhhyOVNvsDYkCLWmr3uDrcE7o4=</dsig:DigestValue>
+        <dsig:DigestValue>31MgisoPesh8gWt8zjNGGKIEF+E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -254,7 +254,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>zr9oiOPlp7+xox3/mp2VCStyHmE=</dsig:DigestValue>
+      <dsig:DigestValue>MtId33uXdDVLv/fYsv2R2HiNQWQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\selector.xnb" size="1920187">
@@ -266,13 +266,31 @@
       <dsig:DigestValue>cklGpR7J6xWhL5bHurm1R0a5IVA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Content\Shells\shell.xnb" size="1920187">
+  <file name="Content\Shells\Shell_Heavy.xnb" size="1920187">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>tmXiIa47Ozh8jCQ7eza3ENER3vY=</dsig:DigestValue>
+      <dsig:DigestValue>MgP8BiwQ7BM4AUGC86Sap4Ga+a0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Shells\Shell_Light.xnb" size="1920187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bSa61aICOzcpCy73S5rw/KYQl9g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\Shells\Shell_Normal.xnb" size="1920187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cp4mmiMMqNkON/b9kbwnKYFw5CA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\sun.xnb" size="1920187">

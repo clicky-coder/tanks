@@ -11,15 +11,6 @@
       <Time>2014-01-25T17:53:27.2050943-07:00</Time>
     </Item>
     <Item>
-      <Source>Shells\shell.png</Source>
-      <Name>Shells\shell</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\shell.xnb</Output>
-      <Time>2014-01-25T18:02:23.9487943-07:00</Time>
-    </Item>
-    <Item>
       <Source>Untitled.png</Source>
       <Name>ground</Name>
       <Importer>TextureImporter</Importer>
@@ -161,7 +152,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\InventoryBackground.xnb</Output>
-      <Time>2014-01-26T09:51:30.3467876-07:00</Time>
+      <Time>2014-01-27T19:28:15.3737998-07:00</Time>
     </Item>
     <Item>
       <Source>Inventory_Item_Background.png</Source>
@@ -189,6 +180,33 @@
       <Options>None</Options>
       <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\controls.xnb</Output>
       <Time>2014-01-26T19:15:01.6416071-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Shells\Shell_Light.png</Source>
+      <Name>Shells\Shell_Light</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\Shell_Light.xnb</Output>
+      <Time>2014-01-27T19:21:52.5189018-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Shells\Shell_Normal.png</Source>
+      <Name>Shells\Shell_Normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\Shell_Normal.xnb</Output>
+      <Time>2014-01-27T19:21:52.5459033-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Shells\Shell_Heavy.png</Source>
+      <Name>Shells\Shell_Heavy</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\Shell_Heavy.xnb</Output>
+      <Time>2014-01-27T19:21:59.9043242-07:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

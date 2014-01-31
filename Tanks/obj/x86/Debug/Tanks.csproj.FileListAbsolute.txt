@@ -1,5 +1,4 @@
 C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Tanks\tank.xnb
-C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\shell.xnb
 C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Tanks.exe
 C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Tanks.pdb
 C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\obj\x86\Debug\Tanks.csprojResolveAssemblyReference.cache
@@ -29,3 +28,6 @@ C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\
 C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Inventory_Item_Background.xnb
 C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\selector.xnb
 C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\controls.xnb
+C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\Shell_Light.xnb
+C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\Shell_Normal.xnb
+C:\Users\Shauna\Documents\Visual Studio 2010\Projects\Tanks\Tanks\Tanks\bin\x86\Debug\Content\Shells\Shell_Heavy.xnb

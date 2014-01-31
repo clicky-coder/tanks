@@ -32,10 +32,12 @@ namespace Tanks
             selectedIndex = 0;
             visibleCounter = 0;
             draw = false;
+                
         }
         public void Update()
         {
             KeyboardState keys = Keyboard.GetState();
+            g.SelectedShell = items[selectedIndex].shellType;
             if (keys.IsKeyDown(Keys.Q) && oldKeys.IsKeyUp(Keys.Q))
             {
                 selectedIndex++; 
@@ -48,7 +50,7 @@ namespace Tanks
             {
                 visibleCounter++;
             }
-            if (visibleCounter > 100)
+            if (visibleCounter > 200)
             {
                 draw = false;
                 visibleCounter = 0;
@@ -62,21 +64,54 @@ namespace Tanks
                 spriteBatch.Draw(texture, rectangle, Color.White);
                 Rectangle selectorRec = new Rectangle(items[selectedIndex].rectangle.X + 100, items[selectedIndex].rectangle.Y + 25, 75, 50);
                 spriteBatch.Draw(Textures["selector"], selectorRec, Color.White);
-                spriteBatch.DrawString(g.gameText, items[selectedIndex].description, new Vector2(selectorRec.X + 100, selectorRec.Y), Color.Black);
+                string sh = "";
+                int shCount = 0;
+                switch (g.SelectedShell)
+                {
+                    case "Shell_Normal":
+                        sh = "Normal Shell";
+                        shCount = g.normalShells;
+                        break;
+                    case "Shell_Light":
+                        sh = "Light Shell";
+                        shCount = g.lightShells;
+                        break;
+                    case "Shell_Heavy":
+                        sh = "Heavy Shell";
+                        shCount = g.heavyShells;
+                        break;
+                }
+                spriteBatch.DrawString(g.gameText, sh, new Vector2(250, 50), Color.Red);
+                spriteBatch.DrawString(g.gameText, items[selectedIndex].description, new Vector2(250, 75), Color.Black);
+                spriteBatch.DrawString(g.gameText, "Stock: " + shCount.ToString(), new Vector2(250, 100), Color.ForestGreen);
                 spriteBatch.End();
                 int X = 30;
                 int Y = 0;
-                for (int i = topIndex; i < items.Count && i < 2; i++)
+                if (selectedIndex != 0)
                 {
-                    X += 0; //arb
-                    if (i == 0)
+                    Y += 25;
+                    items[selectedIndex - 1].rectangle.X = X;
+                    items[selectedIndex - 1].rectangle.Y = Y;
+                    items[selectedIndex - 1].Draw();
+                    Y += 50;
+                    items[selectedIndex].rectangle.X = X;
+                    items[selectedIndex].rectangle.Y = Y;
+                    items[selectedIndex].Draw();
+                }
+                else
+                {
+                    for (int i = topIndex; i < items.Count && i < 2; i++)
                     {
-                        Y += 25;
+                        X += 0; //arb
+                        if (i == 0)
+                        {
+                            Y += 25;
+                        }
+                        else Y += 50;
+                        items[i].rectangle.X = X;
+                        items[i].rectangle.Y = Y;
+                        items[i].Draw();
                     }
-                    else Y += 50;
-                    items[i].rectangle.X = X;
-                    items[i].rectangle.Y = Y;
-                    items[i].Draw();
                 }
             }
         }
@@ -88,13 +123,15 @@ namespace Tanks
         Texture2D shellTexture;
         SpriteBatch spriteBatch;
         public string description;
-        public Item(Rectangle r, Texture2D t, Texture2D st, SpriteBatch sb, string d)
+        public string shellType;
+        public Item(Rectangle r, Texture2D t, Texture2D st, SpriteBatch sb, string d, string sty)
         {
             rectangle = r;
             texture = t;
             shellTexture = st;
             spriteBatch = sb;
             description = d;
+            shellType = sty;
         }
         public void Update()
         {
@@ -102,8 +139,8 @@ namespace Tanks
         public void Draw()
         {
             spriteBatch.Begin();
-            spriteBatch.Draw(texture, rectangle, Color.White);
-            Rectangle shellRec = new Rectangle(rectangle.X + 13, rectangle.Y + 40, 25, 25);
+            //spriteBatch.Draw(texture, rectangle, Color.White);
+            Rectangle shellRec = new Rectangle(rectangle.X + 13, rectangle.Y + 30, (int)(0.09 * shellTexture.Width), (int)(0.09 * shellTexture.Height));
             spriteBatch.Draw(shellTexture, shellRec, Color.White);
             spriteBatch.End();
         }
